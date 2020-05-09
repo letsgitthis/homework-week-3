@@ -55,13 +55,12 @@ h1 {
     border: 2px dashed #c0c7cf;
     border-radius: 6px;
     resize: none;
-    /*overflow: hidden;*/
   }
 
   #length {
     border: 2px dashed #c0c7cf;
     border-radius: 6px;
-  }
+}
 
 .button0 {
     display: flex;
@@ -77,6 +76,7 @@ h1 {
     display: flex;
     justify-content: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .option {

@@ -2,6 +2,7 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>Password Generator</title>
     </head>
@@ -28,26 +29,26 @@
                     <button class="button0" id="generate">Generate password</button>
                 </div>
 
-                <form class="options">
+                <form class="options" class="col-md-3">
                     <div class="option">
                         <label for="input1">Numbers</label>
                         <input type="checkbox" id="numbers" value="on" checked />
                     </div>
-                    <div class="option">
+                    <div class="option" class="col-md-3">
                         <label for="input2">Uppercase</label>
                         <input type="checkbox" id="uppercase" value="on" checked />
                     </div>
-                    <div class="option">
+                    <div class="option" class="col-md-3">
                         <label for="input3">Lowercase</label>
                         <input type="checkbox" id="lowercase" value="on" checked />
                     </div>
-                    <div class="option">
+                    <div class="option" class="col-md-3">
                         <label for="input4">Special characters</label>
                         <input type="checkbox" id="symbols" value="on" checked />
                     </div>
-                    <div class="option">
-                        <input type="number" id="length" min="8" max="128" 
-                        placeholder="password length">
+                    <div class="option" class="col-md-4">
+                        <input type="number" id="length" 
+                        placeholder="password length" min="8" max="128"/>
                     </div>
                 </form>
             </div>
