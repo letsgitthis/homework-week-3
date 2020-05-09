@@ -12,34 +12,48 @@
         </header>
 
         <div class="display">
-            <h2>Generated Password:</h2>
-            <span id="display2"></span>
+            <h2>Generated Password</h2>
         </div>
+        <div class="card-body">
+            <textarea
+              readonly
+              id="output"
+              placeholder="Your Secure Password"
+              aria-label="Generated Password"
+            ></textarea>
+          </div>
+        <div class="container">
+            <div class="row">
+                <div class="button0">
+                    <button class="button0" id="generate">Generate password</button>
+                </div>
 
-        <div class="button0">
-            <button id="button0">Generate password</button>
-        </div>
-        <br>
+                <form class="options">
+                    <div class="option">
+                        <label for="input1">Numbers</label>
+                        <input type="checkbox" id="numbers" value="on" checked />
+                    </div>
+                    <div class="option">
+                        <label for="input2">Uppercase</label>
+                        <input type="checkbox" id="uppercase" value="on" checked />
+                    </div>
+                    <div class="option">
+                        <label for="input3">Lowercase</label>
+                        <input type="checkbox" id="lowercase" value="on" checked />
+                    </div>
+                    <div class="option">
+                        <label for="input4">Special characters</label>
+                        <input type="checkbox" id="symbols" value="on" checked />
+                    </div>
+                    <div class="option">
+                        <input type="number" id="length" min="8" max="128" 
+                        placeholder="password length">
+                    </div>
+                </form>
+            </div>
+        </div>  
 
-        <div class="options">
-            <button id="button1">Numbers</button>
-            <button id="button2">Uppercase</button>
-            <button id="button3">Lowercase</button>
-            <button id="button4">Special characters</button>
-            <button id="button5">8 digit</button>
-            <button id="button6">16 digit</button>
-        </div>
-        <br>
-
-
-        <div>
-            <h3>Note:</h3>
-            <ul>For a more secure password, please use a 16 digit combination that includes uppercase, lowercase, and at least one special character.</ul>
-            <ul>Site Author is not responsible for the use of the passwords generated.</ul>
-        </div>
-
-
-        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="./assets/app.js"></script>
         <footer class="footer">
             <h3>Made by John Bentley</h3>
             <p>2020 Javascript Homework week-3</p>

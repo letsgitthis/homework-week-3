@@ -1,7 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100vh;
 }
 
 header {
@@ -20,17 +30,47 @@ h1 {
 .display {
     display: flex;
     border: 5px black;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 
-.display2 {
-    padding-left: 20px;
+.card-body {
+    margin-bottom: 20px;
 }
+
+#output {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+    resize: none;
+    /*overflow: hidden;*/
+  }
+
+  #length {
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+  }
 
 .button0 {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
+}
+
+#numbers, #uppercase, #lowercase, #symbols, #length {
+    margin-left: 5px;
 }
 
 .options {
@@ -39,6 +79,20 @@ h1 {
     justify-content: space-around;
 }
 
+.option {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 15px 0; 
+   margin-right: 15px;
+}
+
+.note {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 .footer {
     text-align: center;
+    margin-top: 100px;
 }
